@@ -1,0 +1,312 @@
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    .main-home {
+        width: 100vw;
+    }
+
+    footer {
+        margin-top: 2600px;
+        width: 100vw;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    
+
+    .grilla {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 3fr 0.5fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+            ;
+        grid-row-gap: 10px;
+
+        header {
+            grid-area: header;
+            height: 45vh;
+            // width: 100vw;
+        }
+        main {
+            grid-area: main;
+            height: 60vh;
+            // width: 100vw;
+        }
+        footer {
+            grid-area: footer;
+            height: 20vh;
+            // width: 100vw;
+
+        }
+    }
+
+    
+
+    .mapa{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 0.5fr 3fr 0.5fr;
+    // grid-template-areas: 
+    //     "titulo"
+    //     "imgmiles"
+    //     "navegador"
+    //     ;
+    // grid-row-gap: 10px; 
+        margin-bottom: 70px;
+        background-color: black;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .logo {
+        grid-area: titulo;
+        padding-left: 55px;
+        font-size: 2rem;
+        margin-top: 10px;
+            }
+    .miles {
+        grid-area: imgmiles;
+        margin-left: 170px;
+
+    }
+    .navegador {
+        grid-area: navegador;
+        margin-bottom: 15px;
+    }
+
+    .container-quienes {
+        width: 100%;
+    }
+
+    section article .jamesimg {
+        width: 400px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .body {
+        background-color: black; 
+        width: 100%;
+    }
+
+    .main-home {
+        width: 100vw;
+    }
+
+    .grilla {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+            ;
+        grid-row-gap: 10px;
+
+        header {
+            grid-area: header;
+            // height: 45vh;
+        }
+        main {
+            grid-area: main;
+            // height: 60vh;
+        }
+        footer {
+            grid-area: footer;
+            // height: 20vh;
+        }
+        
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .miles-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 170px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .generos__gen {
+        width: 100%;
+    }
+
+    ul .generos__gen {
+        margin-left: 25px;
+    }
+        
+
+    .main-home {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        
+    }
+    .tamaño-imagen {
+        width: 250px;
+        height: 220px;
+    
+    }
+
+    section article .jamesimg {
+        margin-left: 38px;
+    }
+
+    article {
+        margin-right: 25px;
+    }
+
+    .container-quienes {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .body {
+        background-color: black;
+        width: 100%;
+    }
+
+    .main-home {
+        width: 100%;
+    }
+
+    .grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 3fr 0.5fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer"
+            ;
+        grid-row-gap: 10px;
+
+        header {
+            grid-area: header;
+            height: 50vh;
+        }
+        main {
+            grid-area: main;
+            height: 40vh;
+            // margin-bottom: 100px;
+        }
+        footer {
+            grid-area: footer;
+            height: 30vh;
+        }
+        
+        
+    }
+
+    footer {
+        // margin-top: 2900px;
+        width: 100%;
+    }
+
+    .container-quienes {
+        width: 100%;
+    }
+
+    .section-article .articlesection {
+        width: 100%;
+        background-color: white;
+    }
+
+    ul .generos__gen {
+        margin-left: 10px;
+    }
+
+    section article .jamesimg {
+        width: 270px;
+        margin-left: 25px;
+        margin-bottom: 150px;
+    }
+
+    .carousel {
+        margin-right: 10px;
+    }
+    
+
+    .mapa{
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+        }
+    
+    article {
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    header {
+        height: 100vw;
+        background-color: black;
+    }
+
+    .imagenes-generos {
+        width: 150px;
+    }
+    
+    
+}
+
+

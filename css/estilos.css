@@ -1,0 +1,485 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grilla {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.09fr 5fr 0.09fr;
+  grid-template-areas: "header" "main" "footer";
+  background-image: url(../img/jazzwallpaper.jpg);
+  background-size: 75%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  height: 20vh;
+  padding: 0 50px;
+  background-color: black;
+  width: 100%;
+}
+header h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3em;
+  color: white;
+  border: 2px solid rgb(152, 93, 207);
+  border-radius: 20px;
+  padding: 10px;
+}
+header div img {
+  width: 130px;
+  border: 2px solid rgb(152, 93, 207);
+  border-radius: 45px;
+  padding: 10px;
+  margin-left: 50px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  border: 2px solid rgb(152, 93, 207);
+  border-radius: 7px;
+  margin: 2px;
+  padding: 2px;
+}
+header nav ul li .nav-link {
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 0;
+  background-color: black;
+}
+header nav ul li a {
+  padding: 0 10px;
+  color: rgb(152, 93, 207);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 0;
+}
+
+/* Index */
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main h2 {
+  margin-bottom: 50px;
+  background-image: linear-gradient(black, rgb(152, 93, 207));
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(152, 93, 207);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 35px;
+  padding: 4px 2px;
+}
+main article ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article ul li {
+  text-align: center;
+  margin-bottom: 55px;
+  width: 300px;
+  background-color: rgb(152, 93, 207);
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 25px;
+  background-image: linear-gradient(black, rgb(152, 93, 207));
+}
+main article ul li:hover {
+  box-shadow: 0 0.4rem 0.4rem black;
+}
+main article ul li img {
+  width: 250px;
+}
+main article ul li p {
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+main article ul li h3 {
+  color: rgb(79, 60, 95);
+}
+
+/* Productos */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  background-image: linear-gradient(black, rgb(152, 93, 207));
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: blueviolet;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 35px;
+  padding: 4px 2px;
+}
+section article ul li {
+  text-align: center;
+  margin-bottom: 55px;
+  width: 300px;
+  background-color: rgb(152, 93, 207);
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 25px;
+  background-image: linear-gradient(black, rgb(152, 93, 207));
+  color: rgb(79, 60, 95);
+}
+section article ul li:hover {
+  box-shadow: 0 0.4rem 0.4rem black;
+}
+section article ul li p {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+/* Quienes Somos */
+section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/jazzwallpaper.jpg);
+  background-size: 500px;
+}
+section article h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(black, rgb(152, 93, 207));
+}
+section article img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  border: 3px solid black;
+}
+section article .jamesimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(152, 93, 207);
+  border: 3px solid black;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(rgb(54, 44, 44), rgb(152, 93, 207));
+  text-align: center;
+}
+
+/* Contacto */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+}
+section fieldset {
+  background-color: rgb(139, 102, 118);
+  width: 30%;
+  margin-top: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(19, 18, 18);
+  border-image: initial;
+  margin: 15px;
+}
+section legend {
+  color: blueviolet;
+  background-color: black;
+  border: 2px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Ubicacion */
+.mapa {
+  margin: 15px 0 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  grid-area: footer;
+  color: rgb(152, 93, 207);
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+}
+footer div img {
+  padding: 7px;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .main-home {
+    width: 100vw;
+  }
+  footer {
+    margin-top: 2600px;
+    width: 100vw;
+  }
+  header {
+    width: 100vw;
+  }
+  .grilla {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-row-gap: 10px;
+  }
+  .grilla header {
+    grid-area: header;
+    height: 45vh;
+  }
+  .grilla main {
+    grid-area: main;
+    height: 60vh;
+  }
+  .grilla footer {
+    grid-area: footer;
+    height: 20vh;
+  }
+  .mapa {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+  }
+  .logo {
+    grid-area: titulo;
+    padding-left: 55px;
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  .miles {
+    grid-area: imgmiles;
+    margin-left: 170px;
+  }
+  .navegador {
+    grid-area: navegador;
+    margin-bottom: 15px;
+  }
+  .container-quienes {
+    width: 100%;
+  }
+  section article .jamesimg {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .body {
+    background-color: black;
+    width: 100%;
+  }
+  .main-home {
+    width: 100vw;
+  }
+  .grilla {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-row-gap: 10px;
+  }
+  .grilla header {
+    grid-area: header;
+  }
+  .grilla main {
+    grid-area: main;
+  }
+  .grilla footer {
+    grid-area: footer;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .miles-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 170px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .generos__gen {
+    width: 100%;
+  }
+  ul .generos__gen {
+    margin-left: 25px;
+  }
+  .main-home {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .tamaño-imagen {
+    width: 250px;
+    height: 220px;
+  }
+  section article .jamesimg {
+    margin-left: 38px;
+  }
+  article {
+    margin-right: 25px;
+  }
+  .container-quienes {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .body {
+    background-color: black;
+    width: 100%;
+  }
+  .main-home {
+    width: 100%;
+  }
+  .grilla {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-areas: "header" "main" "footer";
+    grid-row-gap: 10px;
+  }
+  .grilla header {
+    grid-area: header;
+    height: 50vh;
+  }
+  .grilla main {
+    grid-area: main;
+    height: 40vh;
+  }
+  .grilla footer {
+    grid-area: footer;
+    height: 30vh;
+  }
+  footer {
+    width: 100%;
+  }
+  .container-quienes {
+    width: 100%;
+  }
+  .section-article .articlesection {
+    width: 100%;
+    background-color: white;
+  }
+  ul .generos__gen {
+    margin-left: 10px;
+  }
+  section article .jamesimg {
+    width: 270px;
+    margin-left: 25px;
+    margin-bottom: 150px;
+  }
+  .carousel {
+    margin-right: 10px;
+  }
+  .mapa {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  header {
+    height: 100vw;
+    background-color: black;
+  }
+  .imagenes-generos {
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

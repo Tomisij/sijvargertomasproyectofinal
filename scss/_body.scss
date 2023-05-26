@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grilla {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.09fr 5fr 0.09fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    // grid-row-gap: 10px;
+    
+    background-image: url(../img/jazzwallpaper.jpg);
+    background-size: 75%;
+}
+
