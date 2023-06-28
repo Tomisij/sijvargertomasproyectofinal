@@ -16,7 +16,9 @@ main {
         border-radius: 10px;
         width: 250px;
         margin-top: 35px;
-        padding: 4px 2px;
+        padding: 10px 2px;
+        color: black;
+        font-weight: 500;
     }
     article {
         ul {
@@ -45,6 +47,8 @@ main {
                     padding-bottom: 10px;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     font-size: 18px;
+                    font-weight: 400;
+                    color: black;
                 }
                 h3 {
                     color: rgb(79, 60, 95);
@@ -75,6 +79,7 @@ section {
         width: 250px;
         margin-top: 35px;
         padding: 4px 2px;
+        color: black;
     }
     article {
         ul {
@@ -100,6 +105,8 @@ section {
                     color: black;
                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                     font-size: 18px;
+                    color: black;
+                    font-weight: 400;
 }
 
 
@@ -150,6 +157,8 @@ section {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 background-image: linear-gradient(rgb(54, 44, 44), $color-principal);
                 text-align: center;
+                font-weight: 400;
+                color: black;
 
             
         }
